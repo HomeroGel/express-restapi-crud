@@ -57,7 +57,6 @@ app.delete('/products/:id', (req, res)=>{
     //con el metodo filter lo elimino.
 
     products = products.filter(p => p.id !== parseInt(req.params.id)) //Me saca el id que ingrese yo
-    console.log(products)
 
     res.sendStatus(204)
 })
