@@ -51,7 +51,7 @@ app.delete('/products/:id', (req, res)=>{
 
     if(!productFound){
         return res.status(404).json({
-            message:"Product not found"
+            message:"Product not found"//dos tragos y sabes que me pongo bellaco
         })
     }
     //con el metodo filter lo elimino.
